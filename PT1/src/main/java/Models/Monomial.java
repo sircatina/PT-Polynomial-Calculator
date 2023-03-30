@@ -4,7 +4,7 @@ public class Monomial {
     private int power;
     private float coefficient;
 
-    public Monomial(int power, float coefficient) {
+    public Monomial( float coefficient,int power) {
         this.power = power;
         this.coefficient = coefficient;
     }

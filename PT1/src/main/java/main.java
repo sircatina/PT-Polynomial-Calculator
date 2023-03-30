@@ -1,5 +1,6 @@
 import Controllers.Controller;
 import Models.Calculator;
+import Models.Monomial;
 import Models.Polynomial;
 import Views.View1;
 

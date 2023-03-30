@@ -40,7 +40,7 @@ public class View1 extends JFrame {
     JLabel SecondLabel = new JLabel("Second Polynomial=");
 		SecondLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
 		SecondLabel.setBounds(46, 140, 189, 29);
-		this.getContentPane().add(FirstLabel);
+		this.getContentPane().add(SecondLabel);
 
     JLabel PolynLabel = new JLabel("Polynomial calculator");
 		PolynLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
