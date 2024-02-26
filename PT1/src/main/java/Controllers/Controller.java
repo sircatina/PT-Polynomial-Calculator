@@ -83,8 +83,9 @@ public class Controller {
                 String polyn2 = view.getSecondField();
                 Polynomial pol1 = transform(polyn1);
                 Polynomial pol2 = transform(polyn2);
-                String result = calculator.oppDivision(pol1, pol2);
-                view.setResulttextArea(result);
+                Polynomial result[]  = calculator.oppDivision(pol1, pol2);
+                String rez= result[0].toString()+ " ,R: " + result[1].toString();
+                view.setResulttextArea(rez);
             } catch (Exception exception) {
                 view.showErorrMessage("Bad input :(");
             }

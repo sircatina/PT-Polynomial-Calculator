@@ -105,9 +105,10 @@ public class Calculator {
         return result;
     }
 
-    public String oppDivision(Polynomial pol1, Polynomial pol2) {
+    public Polynomial[] oppDivision(Polynomial pol1, Polynomial pol2) {
         Polynomial cat = new Polynomial();
         Polynomial rest = new Polynomial();
+        Polynomial result[]=new Polynomial[2];
         int gradD = maxPower(pol1);
         int gradI = maxPower(pol2);
         float coefC = 0;
@@ -126,7 +127,8 @@ public class Calculator {
             gradD = maxPower(pol1);
             gradI = maxPower(pol2);
         }
-        String result = cat.toString() + " ,R: " + pol1.toString();
+        result[0] = cat;
+        result[1]=pol1;
         return result;
     }
 

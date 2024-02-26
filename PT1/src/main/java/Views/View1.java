@@ -83,12 +83,12 @@ public class View1 extends JFrame {
 		this.getContentPane().add(ResultLabel);
 
 	ResulttextArea = new JTextArea();
-		ResulttextArea.setBounds(218, 190, 196, 29);
+		ResulttextArea.setBounds(128, 190, 286, 29);
 		this.getContentPane().add(ResulttextArea);
 		this.setVisible(true);
 }
 	public void setFirstField(String firstField) {this.FirstField.setText(firstField);}
-	public String getFirstField() {return FirstField.getText();}
+	public int getFirstField() {return FirstField.getText();}
 	public void setSecondField(String secondField) {this.SecondField.setText(secondField);}
 	public String getSecondField() {return SecondField.getText();}
 	public String getResulttextArea() {return ResulttextArea.getText();}

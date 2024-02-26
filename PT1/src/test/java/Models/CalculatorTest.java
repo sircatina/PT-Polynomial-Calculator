@@ -69,7 +69,8 @@ class CalculatorTest {
         String pol2 = "2*x^2+1*x^0";
         Polynomial polyn1 = Controller.transform(pol1);
         Polynomial polyn2 = Controller.transform(pol2);
-        String result = calculator.oppDivision(polyn1,polyn2);
-        assertEquals(result, "2.0*x^0 ,R: 4.0*x^1+-2.0*x^0");
+        Polynomial result[] = calculator.oppDivision(polyn1,polyn2);
+        String rez=result[0].toString()+" ,R: "+result[1].toString();
+        assertEquals(rez, "2.0*x^0 ,R: 4.0*x^1+-2.0*x^0");
     }
 }
